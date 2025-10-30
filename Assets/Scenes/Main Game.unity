@@ -224,9 +224,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6653925072539550519, guid: a00290680da49884b83aef525d25de75, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1905059277}
     - target: {fileID: 7300821985702643008, guid: a00290680da49884b83aef525d25de75, type: 3}
       propertyPath: m_Name
-      value: Diamond (1)
+      value: Diamond 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -647,9 +651,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6653925072539550519, guid: a00290680da49884b83aef525d25de75, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1905059277}
     - target: {fileID: 7300821985702643008, guid: a00290680da49884b83aef525d25de75, type: 3}
       propertyPath: m_Name
-      value: Diamond (2)
+      value: Diamond 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3220,7 +3228,7 @@ PrefabInstance:
       objectReference: {fileID: 1905059277}
     - target: {fileID: 7300821985702643008, guid: a00290680da49884b83aef525d25de75, type: 3}
       propertyPath: m_Name
-      value: Diamond
+      value: Diamond 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

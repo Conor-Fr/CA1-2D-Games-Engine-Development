@@ -113,5 +113,9 @@ public class Player : MonoBehaviour
         score++;
         ui.SetScore(score);
         _audio.PlayOneShot(collectSound);
+        if(score >= 3)
+        {
+            SceneManager.LoadScene("Game Won");
+        }
     }
 }
