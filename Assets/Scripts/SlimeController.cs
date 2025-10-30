@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 
 public class SlimeController : MonoBehaviour
 {
@@ -45,8 +44,8 @@ public class SlimeController : MonoBehaviour
 
             else if(!isIdle && timeInDirection < 0)
             {
-                direction = direction * -1;
-                _animator.SetInteger("DIrection", direction);
+                //direction = direction * -1;
+                //_animator.SetInteger("DIrection", direction);
                 idleTime = 2;
                 isIdle = true;
                 _animator.SetFloat("Move", 0);
@@ -63,7 +62,8 @@ public class SlimeController : MonoBehaviour
                 idleTime -= Time.deltaTime;
             }
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(direction, 0), 5f, LayerMask.GetMask("Player"));
+            RaycastHit2D hit = Physics2D.Raycast(transform.position,
+                new Vector2(direction, 0), 5f, LayerMask.GetMask("Player"));
             if(hit.collider != null)
             {
                 if(hit.collider.GetComponent<Player>() != null)

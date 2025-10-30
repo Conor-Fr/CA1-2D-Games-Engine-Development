@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
             isPlaying = true;
         }
 
-        if (move == 0 && isPlaying || jumping)
+        if (move == 0 && isPlaying)
         {
             _audio.Pause();
             isPlaying = false;
