@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
             startPosition = transform.position;
         }
-        if (collision.gameObject.name.Contains("Enemy Projectile"))
+        if (collision.gameObject.name.Contains("EnemyProjectile"))
         {
             loseLife();
         }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class SlimeController : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class SlimeController : MonoBehaviour
 
     [SerializeField] float fireTimer = 0.5f;
     float fireCountdown = 0;
+    [SerializeField] GameObject projectilePrefab;
 
     private AudioSource _audio;
     private bool isPlaying = false;
@@ -68,7 +70,7 @@ public class SlimeController : MonoBehaviour
             {
                 if(hit.collider.GetComponent<Player>() != null)
                 {
-                    //attack();
+                    fire();
                 }
             }
             fireCountdown -= Time.deltaTime;
@@ -105,19 +107,15 @@ public class SlimeController : MonoBehaviour
             }
         }
     }
-
-    /*
-     * Work on this for melee attack
-     * 
-    public void attack()
+    public void fire()
     {
-        if(fireCountdown < 0)
+        if (fireCountdown < 0)
         {
             fireCountdown = fireTimer;
-            GameObject projectile = Instantiate(projectilePrefab, GetComponet<Rigidbody>().position.Quaternion.identity);
+            GameObject projectile = Instantiate(projectilePrefab,
+            GetComponent<Rigidbody2D>().position, Quaternion.identity);
             Projectile script = projectile.GetComponent<Projectile>();
-            script.Launch(new Vector2Distance(direction, 0), 300);
+            script.Launch(new Vector2(direction, 0), 300);
         }
     }
-    */
 }
