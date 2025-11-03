@@ -22,6 +22,12 @@ public class Player : MonoBehaviour
     private bool isPlaying = false;
     public AudioClip collectSound;
 
+    public Transform meleePoint;
+    public float meleeRange = 0.5f;
+    public LayerMask enemyLayers;
+    public float meleeRate = 2f;
+    float nextMeleeTime = 0f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,7 +42,7 @@ public class Player : MonoBehaviour
         Vector2 position = transform.position;
         float move = Input.GetAxis("Horizontal");
 
-        if(move != 0 && !isPlaying && !jumping)
+        if (move != 0 && !isPlaying && !jumping)
         {
             _audio.Play();
             isPlaying = true;
@@ -57,19 +63,27 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !jumping)
         {
-                rb.AddForce(new Vector2(0, Mathf.Sqrt(-2 * Physics2D.gravity.y * JumpHeight)),
-                ForceMode2D.Impulse);
-                jumping = true;
+            rb.AddForce(new Vector2(0, Mathf.Sqrt(-2 * Physics2D.gravity.y * JumpHeight)),
+            ForceMode2D.Impulse);
+            jumping = true;
+        }
+        if(Time.time >= nextMeleeTime)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                melee();
+                nextMeleeTime = Time.time + 1f / meleeRate;
+            }
         }
     }
 
     private void updateAnimation(float move)
     {
-        if(move > 0)
+        if (move > 0)
         {
             animator.SetInteger("Direction", 1);
         }
-        else if(move < 0)
+        else if (move < 0)
         {
             animator.SetInteger("Direction", -1);
         }
@@ -79,10 +93,12 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         jumping = false;
+        /*
         if (collision.gameObject.tag.Contains("Enemy"))
         {
             loseLife();
         }
+        */
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -113,9 +129,21 @@ public class Player : MonoBehaviour
         score++;
         ui.SetScore(score);
         _audio.PlayOneShot(collectSound);
-        if(score >= 3)
+        if (score >= 3)
         {
             SceneManager.LoadScene("Game Won");
+        }
+    }
+
+
+    public void melee()
+    {
+        animator.SetTrigger("Melee");
+        
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(meleePoint.position, meleeRange, enemyLayers);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<SlimeController>().TakeDamage(1);
         }
     }
 }

@@ -565,7 +565,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.167031, y: -1.8755599, z: -10}
+  m_LocalPosition: {x: -6.132966, y: -1.87568, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2916,6 +2916,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &630527130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630527131}
+  m_Layer: 0
+  m_Name: MeleePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630527131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630527130}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.018, y: -0.022, z: -0.008129148}
+  m_LocalScale: {x: 0.37321788, y: 0.37321788, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1905059279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770213798
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3049,7 @@ Transform:
   m_GameObject: {fileID: 770213798}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1840672, y: -3.48, z: -10}
+  m_LocalPosition: {x: -6.15, y: -3.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3074,13 +3105,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d0bf1437f6cbd164baba5d661ba6e976, type: 3}
   m_Resource: {fileID: 8300000, guid: d0bf1437f6cbd164baba5d661ba6e976, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 134
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5133,6 +5164,8 @@ MonoBehaviour:
   health: 3
   idleTime: 2
   fireTimer: 0.5
+  projectilePrefab: {fileID: 3843368277418980598, guid: f48658eb1dcc8f34eb1b45f627a17191, type: 3}
+  hurtSound: {fileID: 8300000, guid: 87e2452fe2c754248926c9a9ab93a467, type: 3}
 --- !u!82 &1791349734
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5480,7 +5513,7 @@ GameObject:
   - component: {fileID: 1905059281}
   - component: {fileID: 1905059282}
   - component: {fileID: 1905059283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5503,6 +5536,12 @@ MonoBehaviour:
   JumpHeight: 2
   ui: {fileID: 1679807533}
   collectSound: {fileID: 8300000, guid: 5ab8fc664ca4d604f820e255005a664a, type: 3}
+  meleePoint: {fileID: 630527131}
+  meleeRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  meleeRate: 2
 --- !u!212 &1905059278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5567,10 +5606,11 @@ Transform:
   m_GameObject: {fileID: 1905059276}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1840672, y: -3.48, z: 0}
+  m_LocalPosition: {x: -6.15, y: -3.48, z: 0}
   m_LocalScale: {x: 2.6794, y: 2.6794, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 630527131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1905059280
@@ -5672,7 +5712,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e1013ccec1cfbd148851a49dc50298d8, type: 3}
   m_Resource: {fileID: 8300000, guid: e1013ccec1cfbd148851a49dc50298d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

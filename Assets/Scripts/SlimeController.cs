@@ -23,6 +23,7 @@ public class SlimeController : MonoBehaviour
 
     private AudioSource _audio;
     private bool isPlaying = false;
+    public AudioClip hurtSound;
 
     void Start()
     {
@@ -95,17 +96,15 @@ public class SlimeController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void TakeDamage(int damage)
     {
-        if(collision.tag == "PlayerAttack")
+        health--;
+        _audio.PlayOneShot(hurtSound);
+        if (health <= 0)
         {
-            health--;
-            if(health <= 0)
-            {
-                isDead = true;
-                _animator.SetBool("isDead", true);
-            }
-        }
+            isDead = true;
+            _animator.SetBool("isDead", true);
+           }
     }
     public void fire()
     {
