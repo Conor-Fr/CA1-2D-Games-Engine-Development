@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     public LayerMask enemyLayers;
     public float meleeRate = 2f;
     float nextMeleeTime = 0f;
+    public AudioClip meleeSound;
 
     void Start()
     {
@@ -73,6 +74,7 @@ public class Player : MonoBehaviour
             {
                 melee();
                 nextMeleeTime = Time.time + 1f / meleeRate;
+                _audio.PlayOneShot(meleeSound);
             }
         }
     }
