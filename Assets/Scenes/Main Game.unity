@@ -527,7 +527,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -874,7 +876,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 06
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1287,7 +1291,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3068,7 +3074,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 02
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3856,7 +3864,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 01
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4573,7 +4583,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8726,7 +8738,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9029,7 +9043,7 @@ MonoBehaviour:
   idleTime: 2
   fireTimer: 2
   projectilePrefab: {fileID: 3843368277418980598, guid: f48658eb1dcc8f34eb1b45f627a17191, type: 3}
-  hurtSound: {fileID: 8300000, guid: 87e2452fe2c754248926c9a9ab93a467, type: 3}
+  hurtSound: {fileID: 8300000, guid: 558f9f56f603a954b8d45e17e89341d9, type: 3}
 --- !u!95 &767210386
 Animator:
   serializedVersion: 7
@@ -11015,7 +11029,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 08
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11080,7 +11096,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 04
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12357,7 +12375,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 14
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12872,7 +12892,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 03
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17911,7 +17933,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 09
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18214,7 +18238,7 @@ MonoBehaviour:
   idleTime: 2
   fireTimer: 2
   projectilePrefab: {fileID: 3843368277418980598, guid: f48658eb1dcc8f34eb1b45f627a17191, type: 3}
-  hurtSound: {fileID: 8300000, guid: 87e2452fe2c754248926c9a9ab93a467, type: 3}
+  hurtSound: {fileID: 8300000, guid: 558f9f56f603a954b8d45e17e89341d9, type: 3}
 --- !u!95 &1772837186
 Animator:
   serializedVersion: 7
@@ -18675,7 +18699,7 @@ MonoBehaviour:
   idleTime: 2
   fireTimer: 2
   projectilePrefab: {fileID: 3843368277418980598, guid: f48658eb1dcc8f34eb1b45f627a17191, type: 3}
-  hurtSound: {fileID: 8300000, guid: 87e2452fe2c754248926c9a9ab93a467, type: 3}
+  hurtSound: {fileID: 8300000, guid: 558f9f56f603a954b8d45e17e89341d9, type: 3}
 --- !u!82 &1791349734
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19697,7 +19721,7 @@ MonoBehaviour:
   speed: 3
   JumpHeight: 2
   ui: {fileID: 1679807533}
-  collectSound: {fileID: 8300000, guid: 5ab8fc664ca4d604f820e255005a664a, type: 3}
+  collectibleSound: {fileID: 8300000, guid: 5ab8fc664ca4d604f820e255005a664a, type: 3}
   meleePoint: {fileID: 630527131}
   meleeRange: 0.5
   enemyLayers:
@@ -19705,6 +19729,7 @@ MonoBehaviour:
     m_Bits: 256
   meleeRate: 2
   meleeSound: {fileID: 8300000, guid: 6618dbf1d05bf804685a6c24db76d415, type: 3}
+  checkpointSound: {fileID: 8300000, guid: c134bf6bd85561b4b938c913b97b57c9, type: 3}
 --- !u!212 &1905059278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20372,7 +20397,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -20790,7 +20817,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 13
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -21443,7 +21472,7 @@ MonoBehaviour:
   idleTime: 2
   fireTimer: 2
   projectilePrefab: {fileID: 3843368277418980598, guid: f48658eb1dcc8f34eb1b45f627a17191, type: 3}
-  hurtSound: {fileID: 8300000, guid: 87e2452fe2c754248926c9a9ab93a467, type: 3}
+  hurtSound: {fileID: 8300000, guid: 558f9f56f603a954b8d45e17e89341d9, type: 3}
 --- !u!95 &2106114368
 Animator:
   serializedVersion: 7
@@ -21770,7 +21799,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Apple 07
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 917284615269224894, guid: d732c433f052247478d37fac6cedfe30, type: 3}
+    - {fileID: 9149535440953663129, guid: d732c433f052247478d37fac6cedfe30, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

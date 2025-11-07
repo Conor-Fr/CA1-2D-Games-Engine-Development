@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     private int lives = 5;
     private AudioSource _audio;
     private bool isPlaying = false;
-    public AudioClip collectSound;
+    public AudioClip collectibleSound;
 
     public Transform meleePoint;
     public float meleeRange = 0.5f;
@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     public float meleeRate = 2f;
     float nextMeleeTime = 0f;
     public AudioClip meleeSound;
+
+    public AudioClip checkpointSound;
 
     void Start()
     {
@@ -108,7 +110,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             startPosition = transform.position;
-            _audio.PlayOneShot(collectSound);
+            _audio.PlayOneShot(checkpointSound);
         }
         if (collision.gameObject.name.Contains("EnemyProjectile"))
         {
@@ -131,7 +133,7 @@ public class Player : MonoBehaviour
     {
         score++;
         ui.SetScore(score);
-        _audio.PlayOneShot(collectSound);
+        _audio.PlayOneShot(collectibleSound);
         if (score >= 3)
         {
             SceneManager.LoadScene("Game Won");
