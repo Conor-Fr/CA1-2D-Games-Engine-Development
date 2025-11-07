@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private UIManager ui;
     private Vector2 startPosition;
-    private int lives = 3;
+    private int lives = 5;
     private AudioSource _audio;
     private bool isPlaying = false;
     public AudioClip collectSound;
@@ -108,6 +108,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             startPosition = transform.position;
+            _audio.PlayOneShot(collectSound);
         }
         if (collision.gameObject.name.Contains("EnemyProjectile"))
         {

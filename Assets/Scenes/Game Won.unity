@@ -1320,8 +1320,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Congrats, \nYou have successfully beaten Level one.\n\nIf you would like
-    to try the level again\n press the button. \n\nOtherwise thank you for playing
-    my game."
+    to try the level again\n press the Play Again button. \n\nOtherwise thank you
+    for playing my game."
 --- !u!222 &2114438806
 CanvasRenderer:
   m_ObjectHideFlags: 0

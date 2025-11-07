@@ -12,7 +12,7 @@ public class SlimeController : MonoBehaviour
     public float distanceTime;
     public float speed;
     public int health;
-    bool isDead = false;
+    public bool isDead = false;
     float dieTime = 1;
     bool isIdle = false;
     public float idleTime = 2;
