@@ -7,8 +7,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //This script is used by the player entity to:
-//-play audio when walking and stopping
-//-jump when the space bar key is pressed
+//-Play audio when walking and stopping
+//-Jump when the space bar key is pressed
 //-Stop the player from spamming melee
 //-Melee when the F key is pressed
 //-Set the different animations based on the Move and Direction variables
@@ -49,7 +49,6 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         startPosition = transform.position;
         _audio = GetComponent<AudioSource>();
-        //meleeSound.volume = 0.5f;
     }
 
     // Update is called once per frame
